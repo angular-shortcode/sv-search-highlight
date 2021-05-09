@@ -1,27 +1,104 @@
+<p align="center">
+  <img style="text-align: center" src="https://angular-shortcode.web.app/assets/icons/logo-128.png"/>
+  <h1 align="center">Angular Shortcode</h1>
+</p>
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg)
+
+
 # SvSearchHighlight
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+## Table of Contents
 
-## Development server
+- [Live Demo](#demo)
+- [Installation](#installation)
+- [Options](#options)
+- [Usage](#usage)
+- [Example](#example)
+- [Author](#author)
+- [Contact](#conatact)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<a name="demo"/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
+***
 
-## Build
+✨ [Angular Shortcode](https://angular-shortcode.web.app/home/highlight) ✨
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[comment]: <> (✨ [Stackblitz]&#40;https://stackblitz.com/edit/svstarrating?file=src/app/app.component.ts&#41; ✨)
 
-## Running unit tests
+[comment]: <> (| [Stackblitz]&#40;#demo&#41;)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<a name="installation"/>
 
-## Running end-to-end tests
+## Installation
+***
+Install with NPM
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+npm i sv-search-highlight
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<a name="options"/>
+
+## Options
+***
+
+| Name                  | Type            | Default Value  |Description     |
+| --------------------- |:---------------:|:--------------:|----------------|
+| value                 | any             |                | The main text  |
+| search                | string          |                | The search text|
+
+
+<a name="usage"/>
+
+## Usage
+***
+
+Import SvSearchHighlightModule in your app
+
+```typescript
+import { SvSearchHighlightModule } from 'sv-search-highlight';
+
+@NgModule({
+  imports: [
+    ...
+      SvSearchHighlightModule
+  ],
+  ...
+})
+export class AppModule { }
+```
+
+<a name="example"/>
+
+## Example
+***
+```html
+<input [(ngModel)]="search">
+<div [innerHTML]="value | svSearchHighlight : search"></div>
+```
+
+<a name="auther"/>
+
+## Author
+***
+`Mehdi Sadeghian` `Samira Vahidi`
+
+
+<a name="conatact"/>
+
+## Contact
+***
+`github`
+- [Angular Shortcode](https://github.com/angular-shorcode/)
+- [Mehdi Sadeghian](https://github.com/sadeghianme)
+- [Samira Vahidi](https://github.com/svahidi)
+
+`linedIn`
+- [Mehdi Sadeghian](https://linkedin.com/in/mehdi-sadeghian626127)
+- [Samira Vahidi](https://www.linkedin.com/in/samira-vahidi626127)
+
+`twitter`
